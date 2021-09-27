@@ -53,3 +53,7 @@ def quarterly_compound_interest(p: int, i: float, n: int) -> float:
         print(value, total_value)
     
     return total_value
+
+def bank_like_interest(p: int, r: float, n: int, t: int) -> float:
+    future_value = p * (1 + (r/n))**(n * t)
+    return future_value
