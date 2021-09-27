@@ -12,7 +12,7 @@ def compound_interest(principal: int, interest: float, periods: int) -> float:
     periods = periods
 
     while periods > 0:
-        value = principal * (1 + interest)**periods
+        value = principal * ((1 + interest)**periods)
         total_value = total_value + value
         periods -= 1
     
@@ -28,5 +28,5 @@ def simple_compound_interest(principal: int, interest: float, periods: int) -> f
         interest: expressed in decimal 3% = .03
         periods: the number of periods to calculate for
     """
-    total_value = principal * (1 + interest)**periods
+    total_value = principal * ((1 + interest)**periods)
     return total_value
